@@ -10,5 +10,7 @@ if( NOT CMAKE_BUILD_TYPE )
        FORCE )
 endif()
 
+add_definitions( "-msse4.1 -O3" )
+
 add_executable(${PROJECT_NAME} src/check_if_sorted.cpp)
 
