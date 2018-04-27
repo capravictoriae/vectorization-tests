@@ -1,7 +1,5 @@
 #include <vector>
-
 #include <cstdlib> 
-
 #include <iostream>
 
 #include <immintrin.h>
@@ -40,6 +38,8 @@ bool is_sorted_sse(const int32_t* input, size_t n) {
     if (input[i] > input[i + 1])
       return false;
   }
+
+  return true;
 }
 
 bool is_sorted_sse_2(int32_t* a, size_t n) {
