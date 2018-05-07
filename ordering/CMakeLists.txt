@@ -11,7 +11,8 @@ if( NOT CMAKE_BUILD_TYPE )
 endif()
 
 # add_definitions( "-g -msse4.1 -O3" )
-add_definitions( "-g -msse4.1 -O0" )
+# add_definitions( "-g -march=native -msse4.1 -O0" )
+add_definitions( "-g -march=native -O0" )
 
 add_executable(${PROJECT_NAME} src/check_if_sorted.cpp)
 
